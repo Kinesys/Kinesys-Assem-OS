@@ -22,11 +22,19 @@ kinesys_os:
 
     lodsb
     cmp al, 0
-    je .praiseur_server
+    je .done
 
     int 0x10
 
     jmp .repeat_next_char
 
+.done
+
+    ret
+
+times (510 - ( $ -$$ )) db 0x00 
+
+
+dw 0xAA55
 
 
