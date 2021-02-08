@@ -22,13 +22,13 @@ kinesys_os:
 
     lodsb
     cmp al, 0
-    je .done
+    je .done_os
 
     int 0x10
 
     jmp .repeat_next_char
 
-.done
+.done_os
 
     ret
 
