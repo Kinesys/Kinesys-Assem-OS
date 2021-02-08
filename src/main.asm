@@ -28,7 +28,7 @@ kinesys_os:
 
     jmp .repeat_next_char
 
-.done_os
+.done_os:
 
     ret
 
