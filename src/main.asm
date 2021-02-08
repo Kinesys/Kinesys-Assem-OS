@@ -16,7 +16,7 @@ start:
 
 kinesys_os:
 
-    mov ab, 0x0E
+    mov ah, 0x0E
 
 .repeat_next_char:
 
